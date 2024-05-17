@@ -8,27 +8,31 @@
   </head>
   <body>
     <nav>
-      <p class="header--logo-text">Header Logo</p>
-      <div class="header--menu">
-        <a class="header--link" href="#">header link one</a>
-        <a class="header-link" href="#">header link two</a>
-        <a class="header-link" href="#">header link three</a>
+      <div class="nav-container">
+        <p class="header--logo-text">Header Logo</p>
+        <div class="header--menu">
+          <a class="header--link" href="#">header link one</a>
+          <a class="header--link" href="#">header link two</a>
+          <a class="header--link" href="#">header link three</a>
+        </div>
       </div>
     </nav>
     <main>
       <section class="section--hero">
-        <div>
-          <h1>This website is awesome</h1>
-          <p class="hero--secondary-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-            placeat, aliquid eos tempora, sunt autem ex laboriosam soluta
-            ducimus expedita commodi excepturi dolorem nesciunt culpa
-            voluptatibus at minus mollitia.
-          </p>
-          <button class="btn hero--btn">Sign Up</button>
-        </div>
-        <div class="hero--image-placeholder">
-          <p>This is a placeholder for an image</p>
+        <div class="hero--container">
+          <div class="hero--col-1">
+            <h1>This website is awesome</h1>
+            <p class="hero--secondary-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              placeat, aliquid eos tempora, sunt autem ex laboriosam soluta
+              ducimus expedita commodi excepturi dolorem nesciunt culpa
+              voluptatibus at minus mollitia.
+            </p>
+            <button class="btn hero--btn">Sign Up</button>
+          </div>
+          <div class="hero--col-2">
+            <p>This is a placeholder for an image</p>
+          </div>
         </div>
       </section>
       <section class="section--random-info">
@@ -53,12 +57,16 @@
         </div>
       </section>
       <section class="section--quote">
-        <blockquote>
-          This is an inspiring quote, or a testimonial from a customer. Maybe
-          it's just filling up space, or maybe people will actually read it. Who
-          knows? All I know is that it looks nice.
-          <footer>-Thor, God of Thunder</footer>
-        </blockquote>
+        <div class="quote">
+          <blockquote>
+            <p>
+              This is an inspiring quote, or a testimonial from a customer.
+              Maybe it's just filling up space, or maybe people will actually
+              read it. Who knows? All I know is that it looks nice.
+            </p>
+            <footer>-Thor, God of Thunder</footer>
+          </blockquote>
+        </div>
       </section>
       <section class="section--cta">
         <div class="cta-container">
@@ -72,7 +80,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <p class="copyright-message">
         Copyright <span>&copy;</span> The Odin Project 2021
       </p>
